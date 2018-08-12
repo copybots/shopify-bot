@@ -4,6 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import time
 import json
+import os
 
 #----------------------------------------------------------------------------------------------------
 # These variables must be filled out in order for the bot to work.
@@ -16,10 +17,10 @@ import json
 #                       If you leave it blank, the bot will respond to commands in every channel (in the server
 #                       with the server ID that you put).
 
-selfbot = False
-token = "NDYxNTAxNDE3MTYxNDkwNDc0.DhUOPw.3n6FTU3HKwdp-YJvYZoNadxf9kI"
-commands_server_id = "416173426252972052"
-commands_channel_id = "461496897505329162"
+selfbot = str(os.environ.get("SELFBOT_BOOL"))
+token = str(os.environ.get("BOT_TOKEN"))
+commands_server_id = str(os.environ.get("COMMANDS_SERVER_ID"))
+commands_channel_id = str(os.environ.get("COMMANDS_SERVER_ID"))
 
 #----------------------------------------------------------------------------------------------------
 # These variables can be edited in the code, but are designed to be changed through discord commands.
