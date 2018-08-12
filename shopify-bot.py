@@ -20,7 +20,7 @@ import os
 selfbot = False
 token = str(os.environ.get("BOT_TOKEN"))
 commands_server_id = str(os.environ.get("COMMANDS_SERVER_ID"))
-commands_channel_id = str(os.environ.get("COMMANDS_SERVER_ID"))
+commands_channel_id = str(os.environ.get("COMMANDS_CHANNEL_ID"))
 
 #----------------------------------------------------------------------------------------------------
 # These variables can be edited in the code, but are designed to be changed through discord commands.
