@@ -17,7 +17,7 @@ import os
 #                       If you leave it blank, the bot will respond to commands in every channel (in the server
 #                       with the server ID that you put).
 
-selfbot = str(os.environ.get("SELFBOT_BOOL"))
+selfbot = False
 token = str(os.environ.get("BOT_TOKEN"))
 commands_server_id = str(os.environ.get("COMMANDS_SERVER_ID"))
 commands_channel_id = str(os.environ.get("COMMANDS_SERVER_ID"))
