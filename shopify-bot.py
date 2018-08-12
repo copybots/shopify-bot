@@ -57,21 +57,21 @@ filedata = {"setup_info": {"copy_server_ids": ["456445523960791042"], "copy_chan
 # except Exception:
 # 	pass
 # else:
-# 	if filedata["setup_info"]["copy_server_ids"] != None:
-# 		copy_server_ids = filedata["setup_info"]["copy_server_ids"]
-# 	if filedata["setup_info"]["copy_channel_ids"] != None:
-# 		copy_channel_ids = filedata["setup_info"]["copy_channel_ids"]
-# 	if filedata["setup_info"]["post_server_ids"] != None:
-# 		post_server_ids = filedata["setup_info"]["post_server_ids"]
-# 	if filedata["setup_info"]["post_channel_ids"] != None:
-# 		post_channel_ids = filedata["setup_info"]["post_channel_ids"]
-# 	if filedata["memberlist"] != None:
-# 		memberlist = filedata["memberlist"]
-# 	if filedata["wordlist"] != None:
-# 		wordlist = filedata["wordlist"]
-# 	if filedata["case_sensitive_wordlist"] != None:
-# 		case_sensitive_wordlist = filedata["case_sensitive_wordlist"]
-# 	filehandle.close()
+if filedata["setup_info"]["copy_server_ids"] != None:
+	copy_server_ids = filedata["setup_info"]["copy_server_ids"]
+if filedata["setup_info"]["copy_channel_ids"] != None:
+	copy_channel_ids = filedata["setup_info"]["copy_channel_ids"]
+if filedata["setup_info"]["post_server_ids"] != None:
+	post_server_ids = filedata["setup_info"]["post_server_ids"]
+if filedata["setup_info"]["post_channel_ids"] != None:
+	post_channel_ids = filedata["setup_info"]["post_channel_ids"]
+if filedata["memberlist"] != None:
+	memberlist = filedata["memberlist"]
+if filedata["wordlist"] != None:
+	wordlist = filedata["wordlist"]
+if filedata["case_sensitive_wordlist"] != None:
+	case_sensitive_wordlist = filedata["case_sensitive_wordlist"]
+# filehandle.close()
 
 commands_server_id_exists = False
 commands_channel_id_exists = False
