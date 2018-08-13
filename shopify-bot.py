@@ -934,7 +934,11 @@ async def on_message(message):
 									server_object = bot.get_server(post_server_id)
 									channel_object = server_object.get_channel(post_channel_id)
 									if channel_object in server_object.channels:
-										await bot.send_message(channel_object, embed=embed)
+										try:
+											await bot.send_message(channel_object, embed=embed)
+										except Exception as e:
+											print(e)
+											print("EMBED: {0}".format(embed_info))
 
 
 					print("Time taken: " + str(time.time() - t0))
