@@ -686,7 +686,22 @@ async def on_message(message):
 				####################################################################################################
 				####################################################################################################
 
+			
+			
+			elif (message.content[:8].lower() == "!cancel ") or (message.content.strip().lower() == "!cancel"):
+				adding_copy_server = False
+				adding_copy_channel = False
+				adding_post_server = False
+				adding_post_channel = False
 
+				removing_copy_server = False
+				removing_copy_channel = False
+				removing_post_server = False
+				removing_post_channel = False
+
+				await bot.send_message(message.channel, "Cancelled.")
+			
+			
 
 			elif adding_copy_server:
 				temp_bool = True
